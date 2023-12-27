@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menuEditTask"
+        android:title="Edit Task"
+        android:icon="@drawable/pen"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/menuDeleteTask"
+        android:title="Delete Task"
+        android:icon="@drawable/trash"
+        android:iconTint="@color/black"/>
+
+
+</menu>

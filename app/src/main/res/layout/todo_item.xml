@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginEnd="11sp"
+            android:layout_marginBottom="11sp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:checkable="true"
+            android:clickable="true"
+            android:fadingEdgeLength="2sp"
+            android:focusable="true"
+            app:cardCornerRadius="7sp"
+            app:checkedIcon="@drawable/tick_circle_shaded"
+            app:checkedIconMargin="12dp"
+            app:checkedIconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-2sp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/closeCard"
+                    android:layout_width="101sp"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:iconStartPadding="40sp"
+                    app:chipIcon="@drawable/x_icon"
+                    android:layout_marginLeft="-18sp"
+                    android:layout_marginTop="-10sp"
+                    android:layout_marginBottom="-10sp"
+                    android:visibility="gone"
+                    app:chipBackgroundColor="@color/pure_red"
+                    app:chipCornerRadius="5sp"
+                    app:chipIconTint="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMain"
+                    android:layout_width="35sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+
+                    android:layout_marginLeft="-18sp"
+                    android:layout_marginTop="-10sp"
+                    android:layout_marginBottom="-10sp"
+                    android:visibility="visible"
+                    app:chipBackgroundColor="@color/blue"
+                    app:chipCornerRadius="5sp"
+                    app:chipIconTint="@color/white" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="vertical">
+
+                    <!-- Media -->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="15sp"
+                        android:layout_weight="2"
+
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginStart="10sp"
+                            android:orientation="vertical"
+                            tools:ignore="NestedWeights">
+
+                            <TextView
+                                android:id="@+id/tvCategoryText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="20sp"
+                                android:alpha="0.6"
+                                android:layout_marginTop="8sp"
+                                android:fontFamily="@font/roboto"
+                                android:text="title"
+                                android:textAppearance="?attr/textAppearanceHeadline6"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.111"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvTodoText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0sp"
+                                    android:layout_marginEnd="120sp"
+                                    android:layout_marginBottom="-1sp"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="title"
+                                    android:textAppearance="?attr/textAppearanceHeadline6"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.111"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintVertical_bias="1.0" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/btnExpand"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="start"
+                                    android:stateListAnimator="@null"
+                                    android:layout_marginStart="-95sp"
+                                    android:elevation="0sp"
+                                    android:layout_weight="0.4"
+                                    android:clickable="false"
+                                    android:fontFamily="@font/roboto_thin"
+                                    android:paddingTop="-5sp"
+                                    android:textColor="@color/grey"
+                                    android:textSize="11sp"
+                                    app:closeIconSize="20sp"
+                                    android:visibility="gone"
+                                    app:chipBackgroundColor="@color/white"
+                                    app:chipCornerRadius="10sp"
+                                    app:chipIconTint="@color/grey"
+                                    app:closeIcon="@drawable/more"
+                                    app:closeIconEnabled="false"
+                                    app:closeIconTint="@color/grey"
+                                    app:closeIconVisible="true" />
+
+
+                            </LinearLayout>
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.chip.Chip
+                                    android:id="@+id/chipTimeRemaining"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start"
+                                    android:layout_marginEnd="25sp"
+                                    android:layout_marginBottom="-5sp"
+                                    android:fontFamily="@font/roboto_black"
+                                    android:paddingTop="-5sp"
+                                    android:text="in 7 Days"
+                                    android:clickable="false"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:visibility="visible"
+                                    app:chipBackgroundColor="@color/white"
+                                    app:chipCornerRadius="10sp"
+                                    app:chipIcon="@drawable/clock"
+                                    app:chipIconSize="21sp"
+                                    app:chipIconTint="@color/black" />
+
+
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/expandablePart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+
+                               >
+
+                                <com.google.android.material.divider.MaterialDivider
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5sp"
+                                    android:alpha="0.3"
+                                    app:dividerColor="@color/black"
+                                    app:dividerInsetEnd="16dp"
+                                    app:dividerInsetStart="2dp"
+                                    app:dividerThickness="1sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/tvTodoDescription"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="20sp"
+                                        android:layout_margin="10sp"
+                                        android:fontFamily="@font/roboto"
+                                        android:text="description"
+                                        android:textAppearance="?attr/textAppearanceHeadline6"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="0.111"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintVertical_bias="1.0" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/expandableObject"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="72dp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="280dp"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="4sp"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:backgroundTint="@color/blue"
+                                                    android:scaleX="0.8"
+                                                    android:scaleY="0.8"
+                                                    app:srcCompat="@drawable/clock_1" />
+
+                                                <TextView
+                                                    android:id="@+id/tvTimetext"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginStart="3sp"
+                                                    android:fontFamily="@font/roboto"
+                                                    android:text="secondary"
+                                                    android:textAppearance="?attr/textAppearanceBody2"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="18sp"
+                                                    app:layout_constraintBottom_toBottomOf="parent"
+                                                    tools:layout_editor_absoluteX="40dp" />
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+                                                <ImageView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:backgroundTint="@color/blue"
+                                                    android:scaleX="0.8"
+                                                    android:scaleY="0.8"
+
+                                                    app:srcCompat="@drawable/calendar" />
+
+                                                <TextView
+                                                    android:id="@+id/tvCalendartext"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginStart="3sp"
+                                                    android:fontFamily="@font/roboto"
+                                                    android:text="secondary"
+                                                    android:textAppearance="?attr/textAppearanceBody2"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="18sp"
+                                                    app:layout_constraintBottom_toBottomOf="parent"
+                                                    tools:layout_editor_absoluteX="40dp" />
+
+                                                <View
+                                                    android:id="@+id/view2"
+                                                    android:layout_width="0dp"
+                                                    android:layout_height="0dp"
+                                                    android:layout_weight="1" />
+
+
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+
+                                        <ImageView
+                                            android:id="@+id/btnOpenTaskMenu"
+                                            android:layout_width="30sp"
+                                            android:layout_height="35sp"
+                                            android:layout_gravity="bottom"
+                                            android:layout_marginStart="25sp"
+                                            android:layout_marginEnd="10sp"
+                                            android:layout_marginBottom="10sp"
+                                            android:alpha="0.8"
+                                            android:scaleX="1"
+                                            android:scaleY="1"
+                                            android:visibility="gone"
+                                            app:srcCompat="@drawable/avd_anim_downtoup"
+                                            app:tint="@color/black" />
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/chipHolder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="12sp"
+                        android:visibility="gone">
+
+                        <!-- Title, secondary and supporting text -->
+
+
+                    </LinearLayout>
+
+                    <!-- Buttons -->
+
+
+                    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                        android:id="@+id/buttonEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_gravity="center"
+                        android:layout_margin="4sp"
+                        android:text="Add Tags"
+                        android:textSize="13sp"
+                        android:visibility="gone"
+                        app:backgroundTint="@color/white"
+                        app:icon="@drawable/add_icon"
+                        app:iconGravity="start" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11sp"
+            android:layout_marginTop="11sp"
+            android:layout_marginEnd="11sp"
+            app:cardElevation="0sp"
+            android:layout_marginBottom="21sp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:checkable="true"
+            android:clickable="true"
+            android:fadingEdgeLength="2sp"
+            android:focusable="true"
+            app:cardCornerRadius="12sp"
+            app:checkedIcon="@drawable/tick_circle_shaded"
+            app:checkedIconMargin="12dp"
+            app:checkedIconTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10sp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Title" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCatTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:layout_marginStart="10sp"
+                    android:padding="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginTop="5sp"
+                    android:background="@drawable/roundedrectangle_other"
+                    android:backgroundTint="@color/lightgrey"
+                    android:inputType="text|textNoSuggestions"
+                    android:maxLength="100"
+                    android:maxLines="1"
+
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Color" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/colorChipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30sp"
+                    android:layout_marginEnd="20sp"
+                    android:layout_marginBottom="40sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="60sp"
+                        android:layout_height="52sp"
+                        app:chipBackgroundColor="@color/green"
+                        app:chipCornerRadius="40sp"
+                        android:checkable="true"
+                        app:chipIconTint="@color/green"
+                        android:tag="LightGreen"/>
+
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="60sp"
+                        android:layout_height="52sp"
+                        android:checkable="true"
+                        app:chipBackgroundColor="@color/blue"
+                        app:chipCornerRadius="40sp"
+                        app:chipIconTint="@color/blue"
+                        android:tag="Blue"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="60sp"
+                        android:checkable="true"
+                        android:layout_height="52sp"
+                        app:chipBackgroundColor="@color/pure_green"
+                        app:chipCornerRadius="40sp"
+                        app:chipIconTint="@color/pure_green"
+                        android:tag="DarkGreen"
+                        />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="60sp"
+                        android:layout_height="52sp"
+                        android:checkable="true"
+                        app:chipBackgroundColor="@color/pure_yellow"
+                        app:chipCornerRadius="40sp"
+                        app:chipIconTint="@color/pure_yellow"
+                        android:tag="Yellow"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="60sp"
+                        android:checkable="true"
+                        android:layout_height="52sp"
+                        app:chipBackgroundColor="@color/pure_red"
+                        app:chipCornerRadius="40sp"
+                        app:chipIconTint="@color/pure_red"
+                        android:tag="Red"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="60sp"
+                        android:layout_height="52sp"
+                        android:checkable="true"
+                        app:chipBackgroundColor="@color/purple"
+                        app:chipCornerRadius="40sp"
+                        app:chipIconTint="@color/purple"
+                        android:tag="Purple"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="60sp"
+                        android:layout_height="52sp"
+                        android:checkable="true"
+                        app:chipBackgroundColor="@color/lightblue_1"
+                        app:chipCornerRadius="40sp"
+                        app:chipIconTint="@color/lightblue_1"
+                        android:tag="Navy"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="60sp"
+                        android:layout_height="52sp"
+                        android:checkable="true"
+                        app:chipBackgroundColor="@color/offwhite"
+                        app:chipCornerRadius="40sp"
+                        app:chipIconTint="@color/offwhite"
+                        android:tag="OffWhite"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="60sp"
+                        android:layout_height="52sp"
+                        android:checkable="true"
+                        app:chipBackgroundColor="@color/pink"
+                        app:chipCornerRadius="40sp"
+                        app:chipIconTint="@color/pink"
+                        android:tag="Pink"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="60sp"
+                        android:layout_height="52sp"
+                        android:checkable="true"
+                        app:chipBackgroundColor="@color/shrine_pink_50"
+                        app:chipCornerRadius="40sp"
+                        app:chipIconTint="@color/shrine_pink_50"
+                        android:tag="LightPink"/>
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/btnCreateCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="52sp"
+                    app:chipBackgroundColor="@color/white"
+                    android:elevation="0sp"
+                    android:textAlignment="textEnd"
+                    app:chipCornerRadius="3sp"
+                    android:text="Create Category"
+                    android:textColor="@color/blue"
+                    app:chipIconTint="@color/black" />
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</LinearLayout>

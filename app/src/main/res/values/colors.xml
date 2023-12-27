@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="PrimaryColor">#912F40</color>
+    <color name="SecondaryColor">#912F40</color>
+    <color name="grey">#C1C1C1</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0057fd</color>
+    <color name="offwhite">#F8F0E3</color>
+    <color name="lightgrey">#eff2f5</color>
+    <color name="travel_color">#7E00E0</color>
+    <color name="cleaning_color">#FFC954</color>
+    <color name="red_text_color">#710000</color>
+    <color name="other_color">#EACDC2</color>
+    <color name="blue2">#F26F80</color>
+    <color name="bluemain">#0057fd</color>
+    <color name="shrine_pink_50">#ffc0cb</color>
+    <color name="shrine_pink_900">#ffe4e1 </color>
+    <color name="shrine_pink_100">#ffb6c1  </color>
+    <color name="purple_200">#ffb6c1  </color>
+    <color name="purple_700">#ffb6c1  </color>
+    <color name="pure_green">#00BF00</color>
+    <color name="pure_red">#C92B26</color>
+    <color name="pure_yellow">#FFC954</color>
+    <color name="orange2">#c73100</color>
+    <color name="bluemain2">#5cb0f3</color>
+    <color name="pink">#f25b9e</color>
+    <color name="green2">#2596be</color>
+    <color name="background">#100720</color>
+    <color name="background2">#090314</color>
+    <color name="blue3">#47B5FF</color>
+    <color name="purple_1">#220e44</color>
+    <color name="purple_2">#180a30</color>
+    <color name="purple_3">#2b213d</color>
+    <color name="red">#ff0000</color>
+    <color name="buttoncolor">#912F40</color>
+    <color name="yellow">#FFC954</color>
+    <color name="lightgreen">#DEFFDF</color>
+    <color name="orange">#B4654A</color>
+    <color name="blue_1">#B0D0D3</color>
+    <color name="lightblue_1">#007BA1</color>
+    <color name="deep_black">#18181b</color>
+    <color name="dark2">#222127</color>
+    <color name="green">#00E0AA</color>
+    <color name="dark3">#3C3C48</color>
+    <color name="purple">#5F4493</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bg_color">#FFFFFF</color>
+    <color name="task_title__color">#000000</color>
+    <color name="rectangle_1_color">#D9D9D9</color>
+
+
+</resources>

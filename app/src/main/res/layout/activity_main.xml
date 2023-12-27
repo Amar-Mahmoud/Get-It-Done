@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutMain"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/MainLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:id="@+id/headerLayoutHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5sp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:padding="20sp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Welcome"
+                                android:textColor="@color/black"
+                                android:textSize="27sp" />
+
+                            <TextView
+                                android:id="@+id/tvCurrentDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.5"
+                                android:fontFamily="@font/roboto"
+                                android:text="Monday, 23 October"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8sp"
+                            android:id="@+id/btnSettings"
+                            android:src="@drawable/settings_icon"
+                             />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <ScrollView
+                    android:id="@+id/parentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:layout_marginBottom="15sp"
+                    tools:ignore="MissingConstraints">
+
+
+                    <LinearLayout
+                        android:id="@+id/draggableLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                            android:id="@+id/btnTodoDeleteSelected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_margin="25sp"
+                            android:backgroundTint="@color/white"
+                            android:elevation="12sp"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            app:icon="@drawable/trash_other_icon" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvTodoList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:nestedScrollingEnabled="true"
+                            android:layoutAnimation="@anim/layout_animation"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/btnNewTask"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:layout_gravity="center"
+        android:layout_margin="40sp"
+        android:checkable="false"
+        android:elevation="2sp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Create New Task"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:chipBackgroundColor="@color/blue"
+        app:chipCornerRadius="6sp"
+        app:chipIconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

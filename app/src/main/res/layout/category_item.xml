@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300sp"
+    android:layout_height="200sp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        style="?attr/materialCardViewElevatedStyle"
+        tools:ignore="MissingConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:backgroundTint="@color/lightblue_1"
+        android:checkable="true"
+        android:clickable="true"
+        android:fadingEdgeLength="2sp"
+        android:focusable="true"
+        android:padding="5sp"
+        app:cardCornerRadius="46sp"
+        app:checkedIconMargin="12dp"
+        app:checkedIconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Media -->
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvCategoryCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="120dp"
+
+                    android:text="secondary"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.143"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTodoText"
+                    app:layout_constraintVertical_bias="0.057" />
+
+                <TextView
+                    android:id="@+id/tvCategoryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="16dp"
+                    android:text="title"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.125"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCategoryIcon"
+                    android:layout_width="74dp"
+                    android:layout_height="70dp"
+                    app:chipCornerRadius="6sp"
+                    android:visibility="gone"
+                    app:chipIcon="@drawable/add_square"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.877"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.808" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- Buttons -->
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/buttonEdit"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="4sp"
+                android:text="Add Tags"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:backgroundTint="@color/white"
+                app:icon="@drawable/add_icon"
+                app:iconGravity="start" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

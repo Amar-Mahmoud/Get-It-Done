@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- android_large___1 styles -->
+
+	<style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/pink</item>
+		<item name="colorOnPrimary">@color/red</item>
+		<item name="colorSecondary">@color/blue2</item>
+		<item name="colorOnSecondary">@color/red</item>
+		<item name="textAppearanceTitleMedium">@style/TextAppearance.App.Medium</item>
+		<item name="textAppearanceButton">@style/TextAppearance.App.Medium</item>
+		<item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+		<item name="bottomAppBarStyle">@style/Widget.App.BottomAppBar</item>
+		<item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+		<item name="colorOnSurface">@color/shrine_pink_100</item>
+		<item name="chipStyle">@style/Widget.App.Chip</item>
+	</style>
+
+	<style name="AppBottomSheetDialogTheme"
+		parent="Theme.Design.Light.BottomSheetDialog">
+		<item name="bottomSheetStyle">@style/AppModalStyle</item>
+	</style>
+
+	<style name="AppModalStyle"
+		parent="Widget.Design.BottomSheet.Modal">
+		<item name="android:background">@drawable/rounded_dialog</item>
+	</style>
+
+	<style name="ModalBottomSheetDialog" parent="Widget.Material3.BottomSheet.Modal">
+		<item name="backgroundTint">@color/white</item>
+		<item name="shapeAppearance">@style/ShapeAppearance.App.LargeComponent</item>
+	</style>
+
+	<style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+		<item name="cornerFamily">cut</item>
+		<item name="cornerSize">24dp</item>
+	</style>
+
+	<style name="Widget.App.BottomAppBar" parent="Widget.Material3.BottomAppBar">
+		<item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomAppBar</item>
+	</style>
+
+
+
+	<style name="ThemeOverlay.App.BottomAppBar" parent="">
+		<item name="colorPrimary">@color/shrine_pink_100</item>
+		<item name="colorOnPrimary">@color/shrine_pink_900</item>
+	</style>
+
+	<style name="TextAppearance.App.Medium" parent="TextAppearance.Material3.TitleMedium">
+	</style>
+
+	<style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.Material3">
+		<item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+		<item name="shapeAppearanceOverlay">@null</item>
+	</style>
+
+	<style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.Material3.Title.Text">
+		<item name="android:textColor">@color/purple</item>
+	</style>
+
+	<style name="Widget.App.Button" parent="Widget.Material3.Button.TextButton.Dialog">
+		<item name="android:textColor">@color/purple</item>
+	</style>
+
+	<style name="Widget.App.TimePicker.Clock" parent="Widget.Material3.MaterialTimePicker.Clock">
+		<item name="clockFaceBackgroundColor">@color/white</item>
+		<item name="clockHandColor">@color/red</item>
+		<item name="clockNumberTextColor">@color/red</item>
+	</style>
+
+	<style name="ThemeOverlay.App.TimePicker" parent="ThemeOverlay.MaterialComponents.TimePicker">
+		<item name="materialTimePickerTitleStyle">@style/TextAppearance.App.TimePicker.Title</item>
+		<item name="clockHandColor">@color/red</item>
+		<item name="android:backgroundTint">@color/black</item>
+		<item name="android:color">@color/white</item>
+		<item name="android:colorPrimary">@color/white</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:buttonStyle">@style/Widget.App.Button</item>
+		<item name="android:foregroundTint">@color/white</item>
+		<item name="clockNumberTextColor">@color/white</item>
+
+	</style>
+	<style name="TextAppearance.App.TimePicker.Title" parent="TextAppearance.MaterialComponents.TimePicker.Title">
+		<item name="android:textSize">18sp</item>
+	</style>
+
+
+	<style name="CustomMaterialDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+		<!-- Background Color-->
+		<item name="android:background">@color/white</item>
+		<item name="android:textSize">25sp</item>
+
+		<!-- Text Color for title and message -->
+		<item name="colorOnSurface">@color/black</item>
+		<!-- Text Color for buttons -->
+		<item name="colorPrimary">@color/blue</item>
+		....
+	</style>
+
+	<style name="CustomDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+	<!-- Background Color-->
+	<item name="android:background">@color/black</item>
+
+	<!-- Text Color for title and message -->
+	<item name="colorOnSurface">@color/white</item>
+	<!-- Text Color for buttons -->
+	<item name="colorPrimary">@color/blue</item>
+	....
+</style>
+
+	<style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+		<item name="cornerFamily">rounded</item>
+		<item name="cornerSize">16dp</item>
+	</style>
+
+	<style name="Widget.App.Chip" parent="Widget.Material3.MaterialTimePicker.Display">
+		<item name="android:textColor">@color/shrine_diplay_text_color</item>
+	</style>
+
+	<style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+		<item name="cornerFamily">cut</item>
+	</style>
+
+
+
+	<style name="ShapeAppearance.YourApp.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+		<item name="cornerFamily">rounded</item>
+		<item name="cornerSize">12dp</item>
+	</style>
+
+</resources>
